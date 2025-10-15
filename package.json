@@ -13,7 +13,9 @@
   "main": "./extension.js",
   "activationEvents": [
     "onCommand:edctools.setPowerShellLanguage",
-    "onCommand:edctools.setSQLLanguage"
+    "onCommand:edctools.setSQLLanguage",
+    "onCommand:edctools.openPanes",
+    "onCommand:edctools.closePanes"
   ],
   "contributes": {
     "commands": [
@@ -24,6 +26,14 @@
       {
         "command": "edctools.setPowerShellLanguage",
         "title": "Set Language Mode to PowerShell"
+      },
+      {
+        "command": "edctools.openPanes",
+        "title": "Open Panes"
+      },
+      {
+        "command": "edctools.closePanes",
+        "title": "Close Panes"
       }
     ],
     "keybindings": [
@@ -36,7 +46,18 @@
         "command": "edctools.setPowerShellLanguage",
         "key": "ctrl+alt+p",
         "when": "editorTextFocus"
+      },
+      {
+        "command": "edctools.openPanes",
+        "key": "ctrl+b",
+        "when": "!sideBarVisible && !panelVisible && !auxiliaryBarVisible"
+      },
+      {
+        "command": "edctools.closePanes",
+        "key": "ctrl+b",
+        "when": "sideBarVisible || panelVisible || auxiliaryBarVisible"
       }
+
     ]
   },
   "scripts": {

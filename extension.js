@@ -20,7 +20,36 @@ function activate(context) {
         }
     });
 
-    context.subscriptions.push(setSQL, setPowerShell);
+    const openPanes = vscode.commands.registerCommand('edctools.openPanes', () => {
+
+        // Close then Toggle Side Bar, to force it to be open
+        vscode.commands.executeCommand('workbench.action.closeSidebar');
+        vscode.commands.executeCommand('workbench.action.toggleSidebarVisibility');
+
+        // Close then Toggle Panel (bottom), to force it to be open
+        vscode.commands.executeCommand('workbench.action.closePanel');
+        vscode.commands.executeCommand('workbench.action.togglePanel');
+
+        // Close then Toggle Auxiliary Bar (right), to force it to be open
+        vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
+        vscode.commands.executeCommand('workbench.action.toggleAuxiliaryBar');
+
+    });
+
+    const closePanes = vscode.commands.registerCommand('edctools.closePanes', () => {
+
+        // Close Side Bar
+        vscode.commands.executeCommand('workbench.action.closeSidebar');
+
+        // Close Panel (bottom)
+        vscode.commands.executeCommand('workbench.action.closePanel');
+
+        // Close Auxiliary Bar (right)
+        vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
+
+    });
+
+    context.subscriptions.push(setSQL, setPowerShell, openPanes, closePanes);
 }
 
 
