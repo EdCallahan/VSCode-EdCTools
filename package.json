@@ -1,8 +1,10 @@
 {
   "name": "edctools",
   "publisher": "EdC",
-  "displayName": "EdCTools",
-  "description": "Misc tools for Me",
+  "displayName": "EdC Personal Tools",
+  "description": "Productivity tools for my personal use",
+  "repository": "https://github.com/EdCallahan/VSCode-EdCTools",
+  "license": "CC0-1.0",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.105.0"

@@ -31,8 +31,8 @@ function activate(context) {
         vscode.commands.executeCommand('workbench.action.togglePanel');
 
         // Close then Toggle Auxiliary Bar (right), to force it to be open
-        vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
-        vscode.commands.executeCommand('workbench.action.toggleAuxiliaryBar');
+        // vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
+        // vscode.commands.executeCommand('workbench.action.toggleAuxiliaryBar');
 
     });
 
@@ -45,7 +45,7 @@ function activate(context) {
         vscode.commands.executeCommand('workbench.action.closePanel');
 
         // Close Auxiliary Bar (right)
-        vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
+        // vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
 
     });
 
