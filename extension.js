@@ -20,19 +20,20 @@ function activate(context) {
         }
     });
 
-    const openPanes = vscode.commands.registerCommand('edctools.openPanes', () => {
+    const openPanes = vscode.commands.registerCommand('edctools.openPanes', async () => {
 
         // Close then Toggle Side Bar, to force it to be open
-        vscode.commands.executeCommand('workbench.action.closeSidebar');
-        vscode.commands.executeCommand('workbench.action.toggleSidebarVisibility');
+        await vscode.commands.executeCommand('workbench.action.closeSidebar');
+        await vscode.commands.executeCommand('workbench.action.toggleSidebarVisibility');
 
         // Close then Toggle Panel (bottom), to force it to be open
-        vscode.commands.executeCommand('workbench.action.closePanel');
-        vscode.commands.executeCommand('workbench.action.togglePanel');
+        await vscode.commands.executeCommand('workbench.action.closePanel');
+        await vscode.commands.executeCommand('workbench.action.togglePanel');
 
-        // Close then Toggle Auxiliary Bar (right), to force it to be open
-        // vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
-        // vscode.commands.executeCommand('workbench.action.toggleAuxiliaryBar');
+        // Refocus the active editor group
+        setTimeout(() => {
+            vscode.commands.executeCommand('workbench.action.focusActiveEditorGroup');
+        }, 100);
 
     });
 
@@ -43,9 +44,6 @@ function activate(context) {
 
         // Close Panel (bottom)
         vscode.commands.executeCommand('workbench.action.closePanel');
-
-        // Close Auxiliary Bar (right)
-        // vscode.commands.executeCommand('workbench.action.closeAuxiliaryBar');
 
     });
 

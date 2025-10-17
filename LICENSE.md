@@ -10,7 +10,7 @@ You can copy, modify, distribute and perform the work, even for commercial purpo
 
 ## Statement
 
-To the extent possible under law, the person who associated CC0 with this work hereby disclaims all copyright and related or neighboring rights to the work.
+To the extent possible under law, Ed Callahan hereby disclaims all copyright and related or neighboring rights to the work.
 
 ---
 
