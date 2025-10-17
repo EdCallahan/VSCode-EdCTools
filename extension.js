@@ -47,7 +47,21 @@ function activate(context) {
 
     });
 
-    context.subscriptions.push(setSQL, setPowerShell, openPanes, closePanes);
+    const moveTabFirst = vscode.commands.registerCommand('edctools.moveTabFirst', () => {
+
+        // move tab to first posistion
+        vscode.commands.executeCommand('moveActiveEditor', { to: 'first' });
+
+    });
+
+    const moveTabLast = vscode.commands.registerCommand('edctools.moveTabLast', () => {
+
+        // move tab to last posistion
+        vscode.commands.executeCommand('moveActiveEditor', { to: 'last' });
+
+    });
+
+    context.subscriptions.push(setSQL, setPowerShell, openPanes, closePanes, moveTabFirst, moveTabLast);
 }
 
 

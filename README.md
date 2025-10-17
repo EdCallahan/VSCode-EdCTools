@@ -9,6 +9,7 @@ Miscellaneous productivity commands for my personal use.
 - Single keystroke to change language mode to SQL
 - Single keystroke to change language mode to Powershell
 - Toggle visibility of left and bottom panels with single keystroke
+- Move current tab to first or last position
 
 ---
 
@@ -18,11 +19,19 @@ Miscellaneous productivity commands for my personal use.
 |----------|-------------|-------------|
 | `edctools.setSQLLanguage` | Set editor language mode to SQL | Ctrl-Alt-S |
 | `edctools.setPowershellLanguage` | Set editor language mode to Powershell | Ctrl-Alt-P |
-| `edctools.openPanes` | Open left and bottom panels | Ctrl-B when panels are closed|
-| `edctools.closePanes` | Close left and bottom panels | Ctrl-B when panels are open|
+| `edctools.openPanes` | Open left and bottom panels | Ctrl-B when panels are closed |
+| `edctools.closePanes` | Close left and bottom panels | Ctrl-B when panels are open |
+| `edctools.moveTabFirst` | Move tab to the first position | Ctrl-LeftArrow |
+| `edctools.moveTabLast` | Move tab to the last position | Ctrl-RightArrow |
 
 
 You can access these from the Command Palette or assign keybindings via **Preferences → Keyboard Shortcuts**.
+
+---
+
+## Screenshot
+
+![Screenshot](images/screenshot.png)
 
 ---
 
