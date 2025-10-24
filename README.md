@@ -21,8 +21,8 @@ Miscellaneous productivity commands for my personal use.
 | `edctools.setPowershellLanguage` | Set editor language mode to Powershell | Ctrl-Alt-P |
 | `edctools.openPanes` | Open left and bottom panels | Ctrl-B when panels are closed |
 | `edctools.closePanes` | Close left and bottom panels | Ctrl-B when panels are open |
-| `edctools.moveTabFirst` | Move tab to the first position | Ctrl-LeftArrow |
-| `edctools.moveTabLast` | Move tab to the last position | Ctrl-RightArrow |
+| `edctools.moveTabFirst` | Move tab to the first position | Alt-LeftArrow |
+| `edctools.moveTabLast` | Move tab to the last position | Alt-RightArrow |
 
 
 You can access these from the Command Palette or assign keybindings via **Preferences → Keyboard Shortcuts**.
