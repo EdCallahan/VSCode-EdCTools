@@ -18,13 +18,13 @@ Miscellaneous productivity commands for my personal use.
 
 | Command | Description | Key Binding |
 |----------|-------------|-------------|
-| `edctools.setSQLLanguage` | Set editor language mode to SQL | Ctrl-Alt-S |
-| `edctools.setPowershellLanguage` | Set editor language mode to Powershell | Ctrl-Alt-P |
-| `edctools.openPanes` | Open left and bottom panels | Ctrl-B when panels are closed |
-| `edctools.closePanes` | Close left and bottom panels | Ctrl-B when panels are open |
-| `edctools.moveTabFirst` | Move tab to the first position | Alt-LeftArrow |
-| `edctools.moveTabLast` | Move tab to the last position | Alt-RightArrow |
-| `edctools.enhancedQuickOpen` | Quick open multiple files | Alt-P |
+| `edctools: Set Language Mode to SQL` | Set editor language mode to SQL | Ctrl-Alt-S |
+| `edctools: Set Language Mode to PowerShell` | Set editor language mode to Powershell | Ctrl-Alt-P |
+| `edctools: Open Panes` | Open left and bottom panels | Ctrl-B when panels are closed |
+| `edctools: Close Panes` | Close left and bottom panels | Ctrl-B when panels are open |
+| `edctools: Move Tab to First` | Move tab to the first position | Alt-LeftArrow |
+| `edctools: Move Tab to Last` | Move tab to the last position | Alt-RightArrow |
+| `edctools: Quick Open` | Quick open multiple files | Alt-P |
 
 
 You can access these from the Command Palette or assign keybindings via **Preferences → Keyboard Shortcuts**.
