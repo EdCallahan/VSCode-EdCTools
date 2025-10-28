@@ -1,5 +1,9 @@
 const vscode = require('vscode');
 
+// open bottom and left panes
+//
+// we force them closed and then toggle them open. This way we don't need to guess 
+// if they are already open or closed
 const openPanes = vscode.commands.registerCommand('edctools.openPanes', async () => {
 
     // Close then Toggle Side Bar, to force it to be open
@@ -17,6 +21,7 @@ const openPanes = vscode.commands.registerCommand('edctools.openPanes', async ()
 
 });
 
+// closes bottom and left panes
 const closePanes = vscode.commands.registerCommand('edctools.closePanes', () => {
 
     // Close Side Bar

@@ -1,5 +1,6 @@
 const vscode = require('vscode');
 
+// move current tab to first position
 const moveTabFirst = vscode.commands.registerCommand('edctools.moveTabFirst', () => {
 
     // move tab to first posistion
@@ -7,6 +8,7 @@ const moveTabFirst = vscode.commands.registerCommand('edctools.moveTabFirst', ()
 
 });
 
+// move current tab to last position
 const moveTabLast = vscode.commands.registerCommand('edctools.moveTabLast', () => {
 
     // move tab to last posistion

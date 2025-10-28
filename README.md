@@ -10,6 +10,7 @@ Miscellaneous productivity commands for my personal use.
 - Single keystroke to change language mode to Powershell
 - Toggle visibility of left and bottom panels with single keystroke
 - Move current tab to first or last position
+- Quick open multiple files, with Ctrl-P like search
 
 ---
 
@@ -23,6 +24,7 @@ Miscellaneous productivity commands for my personal use.
 | `edctools.closePanes` | Close left and bottom panels | Ctrl-B when panels are open |
 | `edctools.moveTabFirst` | Move tab to the first position | Alt-LeftArrow |
 | `edctools.moveTabLast` | Move tab to the last position | Alt-RightArrow |
+| `edctools.enhancedQuickOpen` | Quick open multiple files | Alt-P |
 
 
 You can access these from the Command Palette or assign keybindings via **Preferences → Keyboard Shortcuts**.
